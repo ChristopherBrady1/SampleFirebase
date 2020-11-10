@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".datainsert">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtheight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:hint="Enter your height"
+        app:layout_constraintBottom_toTopOf="@+id/btnsave"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter your phone number"
+        app:layout_constraintBottom_toTopOf="@+id/txtheight"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter your age"
+        app:layout_constraintBottom_toTopOf="@+id/txtnum"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter your name"
+        app:layout_constraintBottom_toTopOf="@+id/txtage"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="SAVE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtheight" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
